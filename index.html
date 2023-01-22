@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Belly Button Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+  <body style="background-color: rgb(182, 182, 182);"></body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center" ; style="background-image:url(https://getwallpapers.com/wallpaper/full/2/6/0/1115985-bacteria-wallpaper-2304x1440-for-mobile-hd.jpg)"; background-size:10%; color: black" >
+        <h1 style="font-family: serif; color:white">Belly Buton Biodiversity Dashboard</h1>
+        <p style="color:rgb(250, 250, 249);">Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2">
+        <div class="well" style="background-color: #eaebeb; color: rgb(39, 40, 41); border-color: #32c053">
+          <h5><b>Test Subject ID No.:</b></h4>
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar"></div>
+        <p><b>Display Top 10 Bacteria Cultures found in each subject.</b></p>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+        <p class=text-center></p><b>Display how often a subject washes their Belly Button per Week.</b></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+        <p class=text-center></p><b>Display every bacteria that exists within the selected subjets's Belly Button.</b></p>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="charts.js"></script>
+ 
+
+</body>
+
+</html>
